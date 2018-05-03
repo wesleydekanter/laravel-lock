@@ -1,0 +1,29 @@
+{
+    "name": "wesleydekanter/laravel-lock",
+    "description": "This package provides additional lock drivers and functionality.",
+    "keywords": [ "laravel", "lock" ],
+    "require": {
+
+    },
+    "authors": [
+        {
+            "name": "Wesley de Kanter",
+            "email": "wesley.dekanter@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WesleyDeKanter\\LaravelLock\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WesleyDeKanter\\LaravelLock\\ServiceProvider"
+            ],
+            "aliases": {
+                "Lock": "WesleyDeKanter\\LaravelLock\\LockFacade"
+            }
+        }
+    }
+}

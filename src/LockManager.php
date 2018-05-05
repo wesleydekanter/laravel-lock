@@ -189,7 +189,7 @@ class LockManager implements ManagerContract
      */
     protected function createMysqlLock(string $name)
     {
-        return new MysqlLock($name);
+        return new MysqlLock($name, config('lock.mysql.connection'));
     }
 
     /**
@@ -201,6 +201,6 @@ class LockManager implements ManagerContract
      */
     protected function createFileLock(string $name)
     {
-        return new FileLock($name);
+        return new FileLock($name, config('lock.filesystem.folder'));
     }
 }

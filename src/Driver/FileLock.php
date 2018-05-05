@@ -22,11 +22,11 @@ class FileLock extends Lock implements LockContract
      * @param string $name
      * @param string $path
      */
-    public function __construct(string $name, ?string $path = null)
+    public function __construct(string $name, string $path)
     {
         parent::__construct($name, 0);
 
-        $this->setPath($path ?? config('lock.filesystem.folder'));
+        $this->setPath($path);
     }
 
     /**

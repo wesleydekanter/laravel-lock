@@ -35,7 +35,7 @@ class MysqlLock extends Lock implements LockContract
     {
         parent::__construct($name, 0);
 
-        $this->connectionName = $connection ?? config('lock.mysql.connection');
+        $this->connectionName = $connection;
     }
 
     /**

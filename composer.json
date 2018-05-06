@@ -1,6 +1,6 @@
 {
     "name": "wesleydekanter/laravel-lock",
-    "description": "This package provides additional lock drivers and functionality on top of the cache locking functionality.",
+    "description": "This package provides additional lock drivers and functionality on top of the default locking functionality.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "library",
